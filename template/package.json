@@ -1,0 +1,35 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "0.0.0",
+    "@nuxtjs/axios": "0.0.0",
+    "@nuxtjs/google-analytics": "0.0.0",
+    "nuxt-i18n": "0.0.0",
+    "qs": "0.0.0",
+    "vee-validate": "0.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "0.0.0",
+    "eslint": "0.0.0",
+    "eslint-friendly-formatter": "0.0.0",
+    "eslint-loader": "0.0.0",
+    "eslint-plugin-vue": "0.0.0",
+    "node-sass": "0.0.0",
+    "sass-loader": "0.0.0",
+    "babel-polyfill": "0.0.0",
+    "cypress": "0.0.0",
+    "eslint-plugin-cypress":"0.0.0"
+  }
+}
