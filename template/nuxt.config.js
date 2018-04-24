@@ -1,20 +1,21 @@
+const nodeExternals = require('webpack-node-externals');
 const i18nOptions = require('./plugins/i18n.js');
 
 const envConfig = {
  default: {
-	ga_id: '',
+	ga_id: '1',
 	site_base_path: '/'
  },
  production: {
-	ga_id: '',
+	ga_id: '2',
 	site_base_path: '/'
  },
  dev: {
-	ga_id: '',
+	ga_id: '3',
 	site_base_path: '/'
  },
  stage: {
-	ga_id: '',
+	ga_id: '4',
 	site_base_path: '/'
  }
 };
@@ -57,7 +58,7 @@ module.exports = {
 	}]
  ],
  plugins: [
-	'~/plugins/notify.js',
+	{src:'~/plugins/notify.js',ssr:false},
 	'~/plugins/monoaxios.js',
 	{src: '~/plugins/monocaptcha.js', ssr: false},
 	'~/plugins/veeValidate.js',
@@ -73,7 +74,7 @@ module.exports = {
 		]
 	 ]
 	},
-	extend (config, {isDev, isClient}) {
+	extend (config, {isDev, isClient,isServer}) {
 	 if (isDev && isClient) {
 		config.module.rules.push({
 		 enforce: 'pre',
@@ -81,6 +82,13 @@ module.exports = {
 		 loader: 'eslint-loader',
 		 exclude: /(node_modules)/
 		})
+	 }
+	 if(isServer){
+		config.externals = [
+		 nodeExternals({
+			whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, /^monuxt/] // Whitelists all monuxt packages
+		 })
+		]
 	 }
 	}
  }

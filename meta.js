@@ -1,3 +1,4 @@
+//noinspection NodeJsCodingAssistanceForCoreModules
 const path = require('path');
 const spawn = require('child_process').spawn;
 
@@ -33,7 +34,6 @@ module.exports = {
 		console.log(`\n\n# Installing project dependencies...`);
 		await runCommand('ncu', ['-u'], {cwd});
 		await runCommand('npm', ['install','--save-exact'], {cwd});
-		await runCommand('npx', ['cypress','verify'], {cwd});
 		
 		// Run lint fix
 		await runCommand('npm', ['run', 'lint', '--', '--fix'], {cwd});
