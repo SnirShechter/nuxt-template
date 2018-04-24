@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import MonoCaptcha from './monocaptcha/index'; // TODO: change path to node_modules
+import MonoCaptcha from 'monuxt-captcha';
 
 const userOptions = {
 

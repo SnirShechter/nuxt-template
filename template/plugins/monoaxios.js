@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import monoaxios from './monoaxios/index'; // TODO: change paths to node_modules
-import {captcha} from './monocaptcha/index';// TODO: change paths to node_modules
-import {error} from './errorsmanager/index';// TODO: change paths to node_modules
+import monoaxios from 'monuxt-axios';
+import {captcha} from 'monuxt-captcha';
+import {error} from 'monuxt-notify';
 
 const options = {
 	axiosDefaults: {

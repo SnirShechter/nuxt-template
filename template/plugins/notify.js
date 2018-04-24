@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import notify from './errorsmanager/index'; // TODO: change to node_modules path
+import notify from 'monuxt-notify';
 
 const userOptions = {
 

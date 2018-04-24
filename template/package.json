@@ -18,7 +18,10 @@
     "@nuxtjs/google-analytics": "0.0.0",
     "nuxt-i18n": "0.0.0",
     "qs": "0.0.0",
-    "vee-validate": "0.0.0"
+    "vee-validate": "0.0.0",
+    "monuxt-notify": "https://bitbucket.org/MonolithWeb/monuxt-notify.git",
+    "monuxt-axios": "https://bitbucket.org/MonolithWeb/monuxt-axios.git",
+    "monuxt-captcha": "https://bitbucket.org/MonolithWeb/monuxt-captcha.git"
   },
   "devDependencies": {
     "babel-eslint": "0.0.0",
@@ -30,7 +33,7 @@
     "sass-loader": "0.0.0",
     "babel-polyfill": "0.0.0",
     "cypress": "0.0.0",
-    "eslint-plugin-cypress":"0.0.0"
+    "eslint-plugin-cypress": "0.0.0"
   },
   "config": {
     "nuxt": {
