@@ -11,7 +11,7 @@ module.exports = {
 			code: 'en',
 			iso: 'en',
 			name: 'English',
-			langFile: 'en.json'
+			langFile: 'en.sample.json'
 		}
 	],
 	vueI18n: {
