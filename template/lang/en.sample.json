@@ -23,7 +23,7 @@
   },
   "errors": {
     "USER_NOT_FOUND": "User not found",
-    "SECRET_NOT_MATCH": "Code does not match",
+    "SECRET_NOT_MATCH": "Code does not match"
   },
   "validation": {
     "messages": {
