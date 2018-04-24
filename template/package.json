@@ -31,5 +31,10 @@
     "babel-polyfill": "0.0.0",
     "cypress": "0.0.0",
     "eslint-plugin-cypress":"0.0.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0"
+    }
   }
 }

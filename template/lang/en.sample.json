@@ -1,0 +1,38 @@
+{
+  "general": {
+    "name": "Name",
+    "tac": "Terms & Conditions"
+  },
+  "header": {
+    "logOut": "Log Out"
+  },
+  "main": {
+    "stats": {
+      "totalReferrals": "Referral|Total Referrals",
+      "yourReferralCode": "Your Referral Code"
+    },
+    "table": {
+      "dateOfPurchase": "Date of Purchase",
+      "reward": "Reward"
+    }
+  },
+  "page404": {
+    "oops": "Oops!",
+    "unknownPage": "It appears you requested an unknown page.",
+    "backToHome": "Back to home"
+  },
+  "errors": {
+    "USER_NOT_FOUND": "User not found",
+    "SECRET_NOT_MATCH": "Code does not match",
+  },
+  "validation": {
+    "messages": {
+      "_default": "Field {0} is not valid.",
+      "numeric": "Field {0} must contain digits only",
+      "required": "Field {0} is required"
+    },
+    "attributes": {
+      "phone": "phone"
+    }
+  }
+}
