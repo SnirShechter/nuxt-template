@@ -58,7 +58,7 @@ module.exports = {
 	}]
  ],
  plugins: [
-	{src:'~/plugins/notify.js',ssr:false},
+	'~/plugins/notify.js',
 	'~/plugins/monoaxios.js',
 	{src: '~/plugins/monocaptcha.js', ssr: false},
 	'~/plugins/veeValidate.js',

@@ -1,3 +1,6 @@
 @import "config/index";
 @import 'typography/index';
 @import 'base/index';
+
+// SweetAlert2(used by monuxt-notify plugin) - config file is in config/sweetalert2
+@import '~sweetalert2/src/sweetalert2.scss';
