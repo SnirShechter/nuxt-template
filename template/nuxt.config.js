@@ -1,4 +1,3 @@
-const nodeExternals = require('webpack-node-externals');
 const i18nOptions = require('./plugins/i18n.js');
 const config = require('./config/config.js');
 
@@ -67,13 +66,6 @@ module.exports = {
 					loader: 'eslint-loader',
 					exclude: /(node_modules)/
 				})
-			}
-			if (isServer) {
-				webpackConfig.externals = [
-					nodeExternals({
-						whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, /^monuxt/] // Whitelists all monuxt packages
-					})
-				]
 			}
 		}
 	}

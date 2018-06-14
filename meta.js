@@ -38,6 +38,9 @@ module.exports = {
 		// Run lint fix
 		await runCommand('npm', ['run', 'lint', '--', '--fix'], {cwd});
 		
+		// Init a git repository
+		await runCommand('git', ['init'], {cwd});
+		
 		console.log(`Done!`);
 	},
 };
